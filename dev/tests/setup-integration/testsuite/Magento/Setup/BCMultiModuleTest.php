@@ -99,7 +99,7 @@ class BCMultiModuleTest extends SetupTestCase
         $this->moduleManager->updateRevision(
             'Magento_TestSetupDeclarationModule7',
             'us_to_us',
-            'UpgradeData.php',
+            'UpdateDataphp',
             'Setup'
         );
     }

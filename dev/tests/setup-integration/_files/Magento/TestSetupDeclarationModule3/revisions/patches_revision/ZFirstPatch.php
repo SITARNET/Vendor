@@ -12,7 +12,7 @@ use Magento\Framework\Setup\Patch\PatchRevertableInterface;
 use Magento\Framework\Setup\Patch\PatchVersionInterface;
 
 /**
- * Class InstallData
+ * Class UpgradeData
  * @package Magento\TestSetupDeclarationModule3\Setup
  */
 class ZFirstPatch implements

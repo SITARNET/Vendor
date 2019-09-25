@@ -73,7 +73,7 @@ class BCPatchTest extends SetupTestCase
         $this->moduleManager->updateRevision(
             'Magento_TestSetupDeclarationModule5',
             'old-scripts',
-            'UpgradeData.php',
+            'UpdateDataphp',
             'Setup'
         );
         $this->moduleManager->updateRevision(
@@ -141,7 +141,7 @@ class BCPatchTest extends SetupTestCase
         $this->moduleManager->updateRevision(
             'Magento_TestSetupDeclarationModule5',
             'old-scripts',
-            'UpgradeData.php',
+            'UpdateDataphp',
             'Setup'
         );
         $this->moduleManager->updateRevision(

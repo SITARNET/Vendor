@@ -144,7 +144,7 @@ class DataPatchInstallationTest extends SetupTestCase
         $this->moduleManager->updateRevision(
             'Magento_TestSetupDeclarationModule3',
             'first_patch_revision',
-            'UpgradeData.php',
+            'UpgradeData.phpp,
             'Setup'
         );
 
