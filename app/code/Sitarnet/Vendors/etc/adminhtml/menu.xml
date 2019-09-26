@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Sitarnet_Vendors::vendor_head" title="Vendors" module="Sitarnet_Vendors" sortOrder="100" resource="Sitarnet_Vendors::vendor_head" parent="Magento_Catalog::catalog"/>
+        <add id="Sitarnet_Vendors::vendor" title="Vendor" sortOrder="10" module="Sitarnet_Vendors" parent="Sitarnet_Vendors::vendor_head" action="vendors/vendor" resource="Sitarnet_Vendors::vendor" />
+    </menu>
+</config>

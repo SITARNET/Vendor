@@ -28,7 +28,8 @@ class Vendor extends AbstractSource
         $options = [];
         $modelCollection = $this->_model->getCollection()
             ->addFieldToSelect('entity_id')
-            ->addFieldToSelect('name');
+            ->addFieldToSelect('name')
+            ->addFieldToSelect('description');
         foreach ($modelCollection as $item){
             $options[] = [
                 'label' => $item->getName(),
