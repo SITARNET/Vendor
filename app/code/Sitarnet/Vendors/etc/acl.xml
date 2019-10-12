@@ -4,9 +4,9 @@
         <resources>
             <resource id="Magento_Backend::admin">
                 <resource id="Sitarnet_Vendors::vendor_head" title="Vendors" sortOrder="100">
-                    <resource id="Sitarnet_Vendor:vendor" title="Vendor" sortOrder="10">
-                        <resource id="Sitarnet::vendor_save" title="Save Vendor" sortOrder="10" />
-                        <resource id="Sitarnet_Jobs::vendor_delete" title="Delete Vendor" sortOrder="20" />
+                    <resource id="Sitarnet_Vendors::vendor" title="Vendor" sortOrder="10">
+                        <resource id="Sitarnet_Vendors::vendor_save" title="Save Vendor" sortOrder="10" />
+                        <resource id="Sitarnet_Vendors::vendor_delete" title="Delete Vendor" sortOrder="20" />
                     </resource>
                 </resource>
             </resource>
