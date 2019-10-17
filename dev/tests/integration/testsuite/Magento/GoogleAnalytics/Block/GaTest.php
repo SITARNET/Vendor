@@ -13,7 +13,7 @@ use Magento\TestFramework\TestCase\AbstractController;
 class GaTest extends AbstractController
 {
     /**
-     * Layout instance
+     * layout instance
      *
      * @var \Magento\Framework\View\LayoutInterface
      */

@@ -77,7 +77,7 @@ class PublicCodeTest extends \PHPUnit\Framework\TestCase
         }
         if (count($nonPublishedBlocks)) {
             $this->fail(
-                "Layout file '$layoutFile' uses following blocks that are not marked with @api annotation:\n"
+                "layout file '$layoutFile' uses following blocks that are not marked with @api annotation:\n"
                 . implode(",\n", array_unique($nonPublishedBlocks))
             );
         }

@@ -177,7 +177,7 @@ class LayoutTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Tests the attributes of the top-level Layout Node.
+     * Tests the attributes of the top-level layout Node.
      * Verifies there are no longer attributes of "parent" or "owner"
      *
      * @param SimpleXMLElement $layoutXml

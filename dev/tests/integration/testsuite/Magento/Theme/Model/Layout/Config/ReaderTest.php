@@ -1,6 +1,6 @@
 <?php
 /**
- * \Magento\Theme\Model\Layout\Config\Reader
+ * \Magento\Theme\Model\layout\Config\Reader
  *
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.

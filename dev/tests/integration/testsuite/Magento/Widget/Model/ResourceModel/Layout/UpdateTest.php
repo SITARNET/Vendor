@@ -65,6 +65,6 @@ class UpdateTest extends \PHPUnit\Framework\TestCase
         $this->_resourceModel->save($layoutUpdate);
 
         $this->assertNotEmpty($appCache->load('APPLICATION_FIXTURE'), 'Non-layout cache must be kept');
-        $this->assertFalse($layoutCache->load('LAYOUT_CACHE_FIXTURE'), 'Layout cache must be erased');
+        $this->assertFalse($layoutCache->load('LAYOUT_CACHE_FIXTURE'), 'layout cache must be erased');
     }
 }

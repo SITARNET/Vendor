@@ -10,7 +10,7 @@
 namespace Magento\Framework\View\Utility;
 
 /**
- * Class Layout
+ * Class layout
  *
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */

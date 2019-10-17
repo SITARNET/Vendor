@@ -48,7 +48,7 @@ class Grid extends DataGrid
             'selector' => '[name="identifier"]',
         ],
         'page_layout' => [
-            'selector' => '//label[span[text()="Layout"]]/following-sibling::div',
+            'selector' => '//label[span[text()="layout"]]/following-sibling::div',
             'strategy' => 'xpath',
             'input' => 'dropdownmultiselect',
         ],

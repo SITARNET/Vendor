@@ -600,7 +600,7 @@ class AbstractBlockTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Create Block with Layout
+     * Create Block with layout
      *
      * @param string $name
      * @param null|string $alias

@@ -55,7 +55,7 @@ class CookieAndSessionMisuse extends AbstractRule implements ClassAware
     }
 
     /**
-     * Is given class a Layout Processor?
+     * Is given class a layout Processor?
      *
      * @param \ReflectionClass $class
      * @return bool

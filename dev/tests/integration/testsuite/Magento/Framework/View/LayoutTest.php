@@ -5,7 +5,7 @@
  */
 
 /**
- * Layout integration tests
+ * layout integration tests
  *
  * Note that some methods are not covered here, see the \Magento\Framework\View\LayoutDirectivesTest
  *

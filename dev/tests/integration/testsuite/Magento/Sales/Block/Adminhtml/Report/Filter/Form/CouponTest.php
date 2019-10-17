@@ -12,7 +12,7 @@ namespace Magento\Sales\Block\Adminhtml\Report\Filter\Form;
 class CouponTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * Layout
+     * layout
      *
      * @var \Magento\Framework\View\LayoutInterface
      */

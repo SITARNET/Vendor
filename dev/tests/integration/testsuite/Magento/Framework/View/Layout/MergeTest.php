@@ -362,7 +362,7 @@ class MergeTest extends \PHPUnit\Framework\TestCase
             ],
             'page_empty' => [
                 'name' => 'page_empty',
-                'label' => new Phrase('All Empty Layout Pages'),
+                'label' => new Phrase('All Empty layout Pages'),
                 'design_abstraction' => 'page_layout',
             ],
         ];
@@ -380,7 +380,7 @@ class MergeTest extends \PHPUnit\Framework\TestCase
             ],
             'page_empty' => [
                 'name' => 'page_empty',
-                'label' => 'All Empty Layout Pages',
+                'label' => 'All Empty layout Pages',
                 'design_abstraction' => 'page_layout',
             ],
             'empty_data' => [],
@@ -401,7 +401,7 @@ class MergeTest extends \PHPUnit\Framework\TestCase
             ],
             'page_empty' => [
                 'name' => 'page_empty',
-                'label' => 'All Empty Layout Pages',
+                'label' => 'All Empty layout Pages',
                 'design_abstraction' => 'page_layout',
             ],
             'empty_data' => [],
@@ -424,7 +424,7 @@ class MergeTest extends \PHPUnit\Framework\TestCase
      * Test loading invalid layout
      *
      * @expectedException \Exception
-     * @expectedExceptionMessage Layout is invalid.
+     * @expectedExceptionMessage layout is invalid.
      */
     public function testLoadWithInvalidLayout()
     {
@@ -438,7 +438,7 @@ class MergeTest extends \PHPUnit\Framework\TestCase
 
         $this->_layoutValidator->expects($this->any())
             ->method('isValid')
-            ->willThrowException(new \Exception('Layout is invalid.'));
+            ->willThrowException(new \Exception('layout is invalid.'));
 
         // phpcs:ignore Magento2.Security.InsecureFunction
         $suffix = md5(implode('|', $this->_model->getHandles()));

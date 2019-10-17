@@ -1,6 +1,6 @@
 <?php
 /**
- * Layout nodes integrity tests
+ * layout nodes integrity tests
  *
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.

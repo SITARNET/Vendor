@@ -26,7 +26,7 @@ class TemplateFilesTest extends \Magento\TestFramework\TestCase\AbstractIntegrit
                     PHP_EOL .
                     "Parameters: {$area}/{$themeId} {$module}::{$file}" .
                     PHP_EOL .
-                    'Layout update: ' .
+                    'layout update: ' .
                     $xml;
             }
         }

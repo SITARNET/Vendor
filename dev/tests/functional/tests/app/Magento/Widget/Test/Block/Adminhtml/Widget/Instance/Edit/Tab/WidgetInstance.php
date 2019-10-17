@@ -64,7 +64,7 @@ class WidgetInstance extends Tab
     }
 
     /**
-     * Click Add Layout Updates button.
+     * Click Add layout Updates button.
      *
      * @return void
      */

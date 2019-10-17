@@ -1,6 +1,6 @@
 <?php
 /**
- * \Magento\Theme\Model\Layout\Config
+ * \Magento\Theme\Model\layout\Config
  *
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.

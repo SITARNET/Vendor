@@ -74,7 +74,7 @@ class CategoryTest extends \Magento\TestFramework\TestCase\AbstractController
         )->getLastVisitedCategoryId();
         $this->assertEquals($categoryId, $lastCategoryId, 'Last visited category.');
 
-        /* Layout updates */
+        /* layout updates */
         $handles = \Magento\TestFramework\Helper\Bootstrap::getObjectManager()->get(
             \Magento\Framework\View\LayoutInterface::class
         )->getUpdate()->getHandles();
