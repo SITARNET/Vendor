@@ -1,10 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--
-/**
- * Copyright © 2015 Magento. All rights reserved.
- * See COPYING.txt for license details.
- */
--->
 <listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
     <!-- Integration -->
     <argument name="data" xsi:type="array">
@@ -22,14 +15,14 @@
                 <item name="name" xsi:type="string">add</item>
                 <item name="label" xsi:type="string" translate="true">Add New Vendor</item>
                 <item name="class" xsi:type="string">primary</item>
-                <item name="url" xsi:type="string">*/*/new</item> <!-- magento will translate it by vendors/vendor/new -->
+                <item name="url" xsi:type="string">*/*/new</item> <!-- magento will translate it by jobs/department/new -->
             </item>
         </item>
     </argument>
     <!-- Data source -->
     <dataSource name="vendors_vendor_listing_data_source">
         <argument name="dataProvider" xsi:type="configurableObject">
-            <argument name="class" xsi:type="string">VendorGridDataProvider</argument> <!-- Data provider class -->
+            <argument name="class" xsi:type="string">VendorsGridDataProvider</argument> <!-- Data provider class -->
             <argument name="name" xsi:type="string">vendors_vendor_listing_data_source</argument> <!-- provider defined above -->
             <argument name="primaryFieldName" xsi:type="string">entity_id</argument> <!-- Primary key -->
             <argument name="requestFieldName" xsi:type="string">id</argument> <!-- URL name parameter -->
@@ -81,76 +74,8 @@
             </argument>
         </container>
 
-        <!-- Filter Search -->
-        <filterSearch name="fulltext">
-            <argument name="data" xsi:type="array">
-                <item name="config" xsi:type="array">
-                    <item name="provider" xsi:type="string">vendors_vendor_listing.vendors_vendor_listing_data_source</item>
-                    <item name="chipsProvider" xsi:type="string">vendors_vendor_listing.vendors_vendor_listing.listing_top.listing_filters_chips</item>
-                    <item name="storageConfig" xsi:type="array">
-                        <item name="provider" xsi:type="string">vendors_vendor_listing.vendors_vendor_listing.listing_top.bookmarks</item>
-                        <item name="namespace" xsi:type="string">current.search</item>
-                    </item>
-                </item>
-            </argument>
-        </filterSearch>
-
         <!-- Filters -->
         <filters name="listing_filters">
-            <argument name="data" xsi:type="array">
-                <item name="config" xsi:type="array">
-                    <item name="storageConfig" xsi:type="array">
-                        <item name="provider" xsi:type="string">vendors_vendor_listing.vendors_vendor_listing.listing_top.bookmarks</item>
-                        <item name="namespace" xsi:type="string">current.filters</item>
-                    </item>
-                    <item name="childDefaults" xsi:type="array">
-                        <item name="provider" xsi:type="string">vendors_vendor_listing.vendors_vendor_listing.listing_top.listing_filters</item>
-                        <item name="imports" xsi:type="array">
-                            <item name="visible" xsi:type="string">vendors_vendor_listing.vendors_vendor_listing.listing_top.bookmarks:current.columns.${ $.index }.visible</item>
-                        </item>
-                    </item>
-                </item>
-            </argument>
-
-            <!-- Department ID Filter -->
-            <!--<filterRange name="department_id">
-                <argument name="data" xsi:type="array">
-                    <item name="config" xsi:type="array">
-                        <item name="dataScope" xsi:type="string">entity_id</item> Column name in DB
-                        <item name="label" xsi:type="string" translate="true">ID</item> Label on grid
-                        <item name="childDefaults" xsi:type="array">
-                            <item name="provider" xsi:type="string">jobs_department_listing.jobs_department_listing.listing_top.listing_filters</item>
-                        </item>
-                    </item>
-                </argument>
-                <filterInput name="from">
-                    <argument name="data" xsi:type="array">
-                        <item name="config" xsi:type="array">
-                            <item name="dataScope" xsi:type="string">from</item>
-                            <item name="label" xsi:type="string" translate="true">from</item>
-                            <item name="placeholder" xsi:type="string" translate="true">From</item>
-                        </item>
-                    </argument>
-                </filterInput>
-                <filterInput name="to">
-                    <argument name="data" xsi:type="array">
-                        <item name="config" xsi:type="array">
-                            <item name="dataScope" xsi:type="string">to</item>
-                            <item name="label" xsi:type="string" translate="true">to</item>
-                            <item name="placeholder" xsi:type="string" translate="true">To</item>
-                        </item>
-                    </argument>
-                </filterInput>
-            </filterRange>-->
-            <!-- Department name Filter -->
-            <!--<filterInput name="department_name">
-                <argument name="data" xsi:type="array">
-                    <item name="config" xsi:type="array">
-                        <item name="dataScope" xsi:type="string">name</item> Column name in DB
-                        <item name="label" xsi:type="string" translate="true">Name</item> Label on grid
-                    </item>
-                </argument>
-            </filterInput>-->
         </filters>
 
         <!-- Mass action -->
@@ -193,8 +118,8 @@
     </container>
 
 
-    <!-- Columns -->
     <columns name="vendors_vendor_columns">
+
         <argument name="data" xsi:type="array">
             <item name="config" xsi:type="array">
                 <!-- Bookmarks behaviour -->
@@ -252,7 +177,6 @@
             </argument>
         </column>
 
-
         <!-- Action columns -->
         <actionsColumn name="actions" class="Sitarnet\Vendors\Ui\Component\Listing\Column\VendorActions">
             <argument name="data" xsi:type="array">
@@ -265,4 +189,5 @@
         </actionsColumn>
 
     </columns>
+
 </listing>

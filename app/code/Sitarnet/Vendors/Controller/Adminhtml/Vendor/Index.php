@@ -31,8 +31,8 @@ class Index extends Action
         /** @var \Magento\Backend\Model\View\Result\Page $resultPage */
         $resultPage = $this->resultPageFactory->create();
         $resultPage->setActiveMenu('Sitarnet_Vendors::vendor');
-        $resultPage->addBreadcrumb(__('Vendors'), __('Vendors'));
-        $resultPage->addBreadcrumb(__('Manage Vendors'), __('Manage Vendors'));
+        $resultPage->addBreadcrumb(__('Vendor'), __('Vendor'));
+        $resultPage->addBreadcrumb(__('Manage Vendor'), __('Manage Vendor'));
         $resultPage->getConfig()->getTitle()->prepend(__('Vendor'));
         return $resultPage;
     }
